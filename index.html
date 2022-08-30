@@ -7,11 +7,9 @@
 	<title>Quad Loisirs - Accueil</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
-	<!-- Start : Import typo google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
-	<!-- End : Import typo google font -->
 
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -20,12 +18,15 @@
 
 	<!-- Start : Header -->
 	<header class="header">
-		<h1 class="header__name">Quad Loisirs</h1>
+		<a href="index.html">
+			<h1 class="header__name">Quad Loisirs</h1>
+		</a>
 
 		<nav>
 			<ul>
-				<li><a class="header__link" href="index.html">Home</a></li>
+				<li><a class="header__link" href="index.html">Accueil</a></li>
 				<li><a class="header__link" href="events.html">Événements</a></li>
+				<li><a class="header__link" href="#">À propos</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -34,15 +35,91 @@
 	<main>
 
 		<!-- Start : First section -->
-        <section class="">
+		<section class="news">
 
+			<img class="news__background" src="img/background.jpg" alt="Arrière-plan section actualités" />
+		</section>
+		<!-- End : First section -->
 
-			
-        </section>
-        <!-- End : First section -->
+		<!-- Start : Second section -->
+		<section class="welcome">
+			<div class="welcome__text">
+				<h1 class="welcome__title">Bienvenue chez <br> <span>Quad Loisirs</span></h1>
+				<p class="welcome__introduction">Quad Loisirs est une association qui organise des événements autour du
+					loisir mécanique.
+					Situé dans l'Essonne, à la limite du Loiret, le terrain de jeu utilisé est adapté pour tous,
+					débutants
+					comme expérimentés.
+					Nous vous proposons un ensemble de parcours variés et adaptés qui vous émerveilleront tout au long
+					de la
+					randonnée.
+				</p>
+			</div>
 
+		</section>
+		<!-- End : Second section -->
+
+		<!-- Start : Third section -->
+		<section class="quad">
+			<img class="quad__image quad__image--left" src="img/quad1.jpg" alt="Machine n°1" />
+			<div class="quad__text">
+				<h1 class="quad__title t-title">Location de <strong>quads</strong></h1>
+				<p class="quad__introduction">Notre parc de machines est renouvelé régulièrement afin de garantir
+					fiabilité et nouveautés. Tous nos quads sont homologués route et peuvent être utilisés en version
+					biplace.
+				</p>
+			</div>
+
+			<img class="quad__image quad__image--right" src="img/quad2.jpg" alt="Machine n°2" />
+		</section>
+		<!-- End : Third section -->
 
 	</main>
+
+	<!-- Start : Fourth section -->
+	<section class="testimonies">
+
+		<div class="testimonies__container">
+			<h2 class="testimonies__title flux t-title">Avis <strong>clients</strong></h2>
+
+			<img class="news__background" src="img/background.jpg" alt="Arrière-plan section actualités" />
+
+			<ul class="testimonies__list flux">
+
+				<li class="card-user">
+					<div class="card-user__top">
+						<img class="card-user__avatar" src="img/rider1.jpg" alt="">
+						<ul class="card-user__informations">
+							<li class="card-user__name">Jean P.</li>
+							<img src="img/stars.svg" alt="Notation">
+						</ul>
+					</div>
+					<p class="card-user__quote">
+						Randonnée quad franchissemente. Superbe expérience, guide extrêmement pédagogue, souriant et
+						compétent. Nous avons passé un excellent moment, je recommande vivement...
+					</p>
+					<a class="t-link" href="#">Lire la suite</a>
+				</li>
+
+				<li class="card-user">
+					<div class="card-user__top">
+						<img class="card-user__avatar" src="img/rider2.jpg" alt="">
+						<ul class="card-user__informations">
+							<li class="card-user__name">Patrice R.</li>
+							<img src="img/stars.svg" alt="Notation">
+						</ul>
+					</div>
+					<p class="card-user__quote">
+						Très bon encadrement, la convivialité était au rendez-vous. Nous avons eu droit à un petit
+						parcours d'initiation avant de commencer la randonnée en sécurité. Le matériel...
+					</p>
+					<a class="t-link" href="#">Lire la suite</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- End : Fourth section -->
+
 
 	<!--footer-->
 	<footer class="footer">
@@ -50,6 +127,7 @@
 			<li><a class="footer__link" href="#">FAQ</a></li>
 			<li><a class="footer__link" href="#">Nous contacter</a></li>
 			<li><a class="footer__link" href="#">Mentions légales</a></li>
+			<li><a class="footer__link" href="#">Politique de confidentialité</a></li>
 		</ul>
 	</footer>
 
